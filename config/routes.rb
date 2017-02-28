@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'visitor#index'
+  
+  get 'meal_list/index', to: 'meal_list#index', as: 'meal_list'
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
